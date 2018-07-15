@@ -4,14 +4,43 @@
     <meta charset="utf-8"/>
     <title>Pastel Stalactites</title>
     <style>
-        * { padding: 0; margin: 0; }
-        canvas { background: #000000; display: block; margin: 0 auto; }
+        body {
+          padding: 0;
+          margin: 0;
+          color: white;
+          background-color: black;
+          text-align: center;
+          font-family: sans-serif;
+        }
+
+        .instructions {
+          border: 3px solid white;
+          border-radius: 50px;
+          padding: 10px;
+        }
+
+        h3 {
+          margin: 0 0 5px 0;
+        }
+
+        canvas {
+          background: #000000;
+          display: block;
+          margin: 0 auto;
+        }
     </style>
 </head>
 
 <body>
 <canvas id="myCanvas" width="720" height="480"></canvas>
-<!--<canvas id="myCanvas" width="240" height="160"></canvas>-->
+<br><br>
+<div class="instructions">
+  <h3>Goal:</h3>
+  Remain as tall as possible (taller "Pastel Hero" = more points) without hitting your head (Game Over)<br><br>
+  <h3>Controls:</h3>
+  Up: Grow the "Pastel Hero"<br>
+  Down: Shrink the "Pastel Hero"
+</div>
 
 <script>
     var canvas = document.getElementById("myCanvas");
